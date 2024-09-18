@@ -1,4 +1,5 @@
 import React from 'react';
+import './AddTaskForm.css';
 
 interface Props {
     currentTask: string;
@@ -6,7 +7,7 @@ interface Props {
     AddNewTask: () => void;
 }
 
-const AddTaskForm = ({currentTask, onChangeTask, AddNewTask}) => {
+const AddTaskForm: React.FC<Props> = ({currentTask, onChangeTask, AddNewTask}) => {
     return (
         <div className= 'form-task'>
             <input
