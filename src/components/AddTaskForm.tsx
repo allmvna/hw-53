@@ -7,16 +7,17 @@ interface Props {
     AddNewTask: () => void;
 }
 
-const AddTaskForm: React.FC<Props> = ({currentTask, onChangeTask, AddNewTask}) => {
+const AddTaskForm: React.FC<Props> = ({ currentTask, onChangeTask, AddNewTask }) => {
     return (
-        <div className= 'form-task'>
+        <div className="form-task">
             <input
-                type= 'text'
+                type="text"
                 value={currentTask}
                 onChange={onChangeTask}
-                placeholder='Add new task' />
-            <button onClick={AddNewTask} type='button'>Add Task</button>
-            </div>
+                placeholder="Add new task"
+            />
+            <button onClick={AddNewTask} type="button">Add Task</button>
+        </div>
     );
 };
 

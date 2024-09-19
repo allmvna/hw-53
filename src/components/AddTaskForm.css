@@ -1,19 +1,27 @@
 .form-task {
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 15px;
+    gap: 10px;
 }
 
 .form-task input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    width: 200px;
 }
 
 .form-task button {
     padding: 10px 15px;
-    background-color: #0a11b2;
-    color: white;
     border: none;
     border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-task button:hover {
+    background-color: #0056b3;
 }

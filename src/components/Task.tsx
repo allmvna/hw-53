@@ -6,11 +6,11 @@ interface TaskProps {
     task: string;
 }
 
-const Task: React.FC<TaskProps> = ({task}, DeleteThisTask) => {
+const Task: React.FC<TaskProps> = ({ task, DeleteThisTask }) => {
     return (
         <div className="task">
             <p>{task.text}</p>
-            <button onClick={DeleteThisTask}>Delete task!</button>
+            <button onClick={DeleteThisTask}>Delete</button>
         </div>
     );
 };
